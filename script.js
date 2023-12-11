@@ -1,5 +1,6 @@
 const splitter = document.querySelector(".app-name");
 const btnTip = document.querySelectorAll(".btn-tip");
+const btnReset = document.querySelector(".btn-reset");
 const customTip = document.getElementById("custom-tip");
 const billInput = document.getElementById("bill");
 const numberOfPeople = document.getElementById("number-of-people");
@@ -44,4 +45,8 @@ splitter.addEventListener("click", () => {
 
   document.querySelector(".person-tip").innerHTML = tipPerPerson;
   document.querySelector(".person-total").innerHTML = billPlusTip;
+});
+
+btnReset.addEventListener("click", () => {
+  location.reload();
 });

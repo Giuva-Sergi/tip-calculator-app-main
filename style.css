@@ -67,6 +67,11 @@ body {
   letter-spacing: 0.5rem;
   color: var(--neutral-clr-600);
   cursor: pointer;
+  transition: transform 350ms ease-in-out;
+}
+
+.app-name:hover {
+  transform: scale(1.1);
 }
 
 .container {
